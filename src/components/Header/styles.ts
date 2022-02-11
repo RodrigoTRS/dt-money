@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.header`
-    background: var(--blue);
+    background: var(--blue-light);
 `;
 
 export const Content = styled.div`
@@ -16,14 +16,14 @@ export const Content = styled.div`
     button {
         font-size: 1rem;
         color: #fff;
-        background: var(--blue-light);
+        background: var(--blue);
         border: 0;
         padding: 0 2rem;
         border-radius: 0.25rem;
         height: 3rem;
         transition: filter 0.2s;
         &:hover {
-        filter: brightness(0.9);
+        filter: brightness(1.1);
         }
     }
 `;

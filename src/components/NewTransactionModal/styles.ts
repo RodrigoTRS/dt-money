@@ -13,13 +13,14 @@ export const Container = styled.form`
         padding: 0 1.5rem;
         height: 4rem;
         border-radius: 0.25rem;
-        background: #e7e9ee;
-        border: 1px solid #d7d7d7;
+        background: var(--blue-light);
+        border: 1px solid var(--blue);
         font-weight: 400;
         font-size: 1rem;
+        color: var(--text-body);
 
         &::placeholder {
-            color: var(--text-body)
+            color: var(--text-body);
         }
 
         & + input {
@@ -29,7 +30,7 @@ export const Container = styled.form`
 
     button[type="submit"] {
         width: 100%;
-        padding 0 1.5rem;
+        padding: 0 1.5rem;
         height: 4rem;
         background: var(--green);
         color: #fff;
@@ -68,6 +69,8 @@ export const RadioBox = styled.button<RadioBoxProps>`
     height: 4rem;
     border: 1px solid #d7d7d7;
     border-radius: 0.25rem;
+    background: var(--blue-light);
+    color: #ffffff;
 
     border-color: ${(props) => props.isActive ? colors[props.activeColor] : 'transparent'};
 
@@ -78,7 +81,7 @@ export const RadioBox = styled.button<RadioBoxProps>`
     transition: border-color 0.2s;
 
     &:hover {
-        background: ${darken(0.1, '#ffffff')};
+        background: ${darken(0.1, '#3E327C')};
     }
 
     img {
